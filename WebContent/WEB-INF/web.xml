@@ -6,11 +6,14 @@
   version="2.4">
 
 	<servlet>
-		<servlet-name>Test2</servlet-name>
-		<servlet-class>TestServer2</servlet-class>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>TestServer</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>Test2</servlet-name>
-		<url-pattern>/test2/*</url-pattern>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/test/*</url-pattern>
 	</servlet-mapping>
+	<listener>
+    	<listener-class>TestServer</listener-class>
+  	</listener>
 </web-app>
